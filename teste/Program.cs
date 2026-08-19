@@ -14,7 +14,7 @@ while (ano < 1906 || ano > 2026)
 Console.WriteLine("Digite o mês de nascimento:");
 mes = int.Parse(Console.ReadLine());
 
-while (mes < 1 || mes > 12)
+while (mes < 1 || mes > 12 || (ano == 2026 && mes > 8))
 {
     Console.WriteLine("Mês inválido!");
     Console.WriteLine("Digite novamente o mês:");
